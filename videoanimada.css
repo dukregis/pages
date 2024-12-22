@@ -1,0 +1,50 @@
+/* Estructura general */
+.video-section {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección a vertical */
+    gap: 20px;
+    margin: 20px;
+    align-items: center; /* Centra los elementos */
+    text-align: center; /* Opcional: centra el texto */
+  }
+  
+  /* Contenedor de la sinopsis */
+  .video-description {
+    max-width: 800px; /* Ajusta el ancho máximo para texto */
+    margin: 0 auto;
+  }
+  
+  .video-description h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .video-description p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  /* Contenedor del video */
+  .video-container {
+    max-width: 100%;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .video-description h2 {
+      font-size: 1.3em;
+    }
+  
+    .video-description p {
+      font-size: 0.9em;
+    }
+  }
+  
